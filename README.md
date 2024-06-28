@@ -1,4 +1,4 @@
-## This is a clone of Hydroxide, do not expect it to be maintained or updated. I only updated some stuff for it to support Wave.
+## This is a modified version of Hydroxide. Please note that it is not actively maintained or updated. The modifications were made solely to ensure compatibility with Wave.
 
 ## Script
 ```lua
