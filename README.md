@@ -1,3 +1,5 @@
+## This is a clone of Hydroxide, do not expect it to be maintained or updated. I only updated some stuff for it to support Wave.
+
 ## Script
 ```lua
 local owner = "Upbolt"
