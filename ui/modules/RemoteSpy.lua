@@ -997,8 +997,12 @@ Methods.ConnectEvent(function(remoteInstance, callInfo)
         local remote = currentRemotes[remoteInstance]
         local log = currentLogs[remoteInstance] or Log.new(remote)
 
+        -- Debug print to inspect callInfo
+        print("callInfo:", callInfo)
+
         log:IncrementCalls(callInfo)
     end
 end)
+
 
 return RemoteSpy
