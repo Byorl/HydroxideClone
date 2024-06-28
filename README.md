@@ -2,7 +2,7 @@
 
 ## Script
 ```lua
-local owner = "Upbolt"
+local owner = "Byorl"
 local branch = "revision"
 
 local function webImport(file)
