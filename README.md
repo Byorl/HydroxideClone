@@ -14,10 +14,6 @@ webImport("ui/main")
 # Hydroxide
 <i>Lua runtime introspection and network capturing tool for games on the Roblox engine.</i>
 
-~~Report issues to our Discord server: https://discord.gg/DJxBwAX~~
-
-<ins>New Discord server will be established when the next major release is ready for use</ins>
-
 <p align="center">
     <img src="https://cdn.discordapp.com/attachments/633472429917995038/722143730500501534/Hydroxide_Logo.png"/>
     </br>
@@ -32,9 +28,6 @@ webImport("ui/main")
 * Constant Scanner
     * View/Modify Constants
     * View information of closure
-* Script Scanner
-    * View general information of scripts (source, protos, constants, etc.)
-    * Retrieve all protos found in GC
 * Module Scanner
     * View general information of modules (return value, source, protos, constants, etc.)
     * Retrieve all protos found in GC
@@ -45,8 +38,6 @@ webImport("ui/main")
 * ClosureSpy
     * Log calls of closures
     * View general information of closures (location, protos, constants, etc.)
-
-More to come, soon.
 
 ## Images/Videos
 <p align="center">
