@@ -276,7 +276,13 @@ local ArgsLog = {}
 
 function Log.new(remote)
     local log = {}
-    local button = Assets.RemoteLog:Clone()
+    local button = Assets:FindFirstChild("RemoteLog")
+    if button then
+        button = button:Clone()
+    else
+        error("RemoteLog not found in Assets")
+    end
+
     local remoteInstance = remote.Instance
     local remoteInstanceName = remoteInstance.Name
     local remoteClassName = remoteInstance.ClassName
@@ -997,12 +1003,14 @@ Methods.ConnectEvent(function(remoteInstance, callInfo)
         local remote = currentRemotes[remoteInstance]
         local log = currentLogs[remoteInstance] or Log.new(remote)
 
-        -- Debug print to inspect callInfo
+        -- Debug print to inspect callInfo and remoteInstance
+        print("remoteInstance:", remoteInstance)
         print("callInfo:", callInfo)
 
         log:IncrementCalls(callInfo)
     end
 end)
+
 
 
 return RemoteSpy
